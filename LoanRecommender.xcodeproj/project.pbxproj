@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		E16BB8B720F71D9400DBD27D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BB8B620F71D9400DBD27D /* AppDelegate.swift */; };
-		E16BB8B920F71D9400DBD27D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BB8B820F71D9400DBD27D /* ViewController.swift */; };
-		E16BB8BC20F71D9400DBD27D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16BB8BA20F71D9400DBD27D /* Main.storyboard */; };
 		E16BB8BE20F71D9500DBD27D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E16BB8BD20F71D9500DBD27D /* Assets.xcassets */; };
 		E16BB8C120F71D9500DBD27D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16BB8BF20F71D9500DBD27D /* LaunchScreen.storyboard */; };
+		E16BB8CE20F71EA400DBD27D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BB8CC20F71EA400DBD27D /* LoginViewController.swift */; };
+		E16BB8CF20F71EA400DBD27D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E16BB8CD20F71EA400DBD27D /* LoginViewController.xib */; };
+		E16BB8D220F913B700DBD27D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BB8D020F913B700DBD27D /* DashboardViewController.swift */; };
+		E16BB8D320F913B700DBD27D /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E16BB8D120F913B700DBD27D /* DashboardViewController.xib */; };
+		E16BB8D620F91C7E00DBD27D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BB8D520F91C7E00DBD27D /* Extensions.swift */; };
+		E16BB8D920F92EA400DBD27D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BB8D720F92EA400DBD27D /* RegisterViewController.swift */; };
+		E16BB8DA20F92EA400DBD27D /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E16BB8D820F92EA400DBD27D /* RegisterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E16BB8B320F71D9400DBD27D /* LoanRecommender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoanRecommender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16BB8B620F71D9400DBD27D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E16BB8B820F71D9400DBD27D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E16BB8BB20F71D9400DBD27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E16BB8BD20F71D9500DBD27D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E16BB8C020F71D9500DBD27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E16BB8C220F71D9500DBD27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E16BB8CC20F71EA400DBD27D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E16BB8CD20F71EA400DBD27D /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		E16BB8D020F913B700DBD27D /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		E16BB8D120F913B700DBD27D /* DashboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
+		E16BB8D520F91C7E00DBD27D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E16BB8D720F92EA400DBD27D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E16BB8D820F92EA400DBD27D /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,43 @@
 		E16BB8B520F71D9400DBD27D /* LoanRecommender */ = {
 			isa = PBXGroup;
 			children = (
+				E16BB8D420F91C5600DBD27D /* Extensions */,
+				E16BB8CB20F71E1E00DBD27D /* Controllers */,
+				E16BB8C920F71DF800DBD27D /* SupportingFiles */,
+			);
+			path = LoanRecommender;
+			sourceTree = "<group>";
+		};
+		E16BB8C920F71DF800DBD27D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				E16BB8B620F71D9400DBD27D /* AppDelegate.swift */,
-				E16BB8B820F71D9400DBD27D /* ViewController.swift */,
-				E16BB8BA20F71D9400DBD27D /* Main.storyboard */,
 				E16BB8BD20F71D9500DBD27D /* Assets.xcassets */,
 				E16BB8BF20F71D9500DBD27D /* LaunchScreen.storyboard */,
 				E16BB8C220F71D9500DBD27D /* Info.plist */,
 			);
-			path = LoanRecommender;
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E16BB8CB20F71E1E00DBD27D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E16BB8CC20F71EA400DBD27D /* LoginViewController.swift */,
+				E16BB8CD20F71EA400DBD27D /* LoginViewController.xib */,
+				E16BB8D020F913B700DBD27D /* DashboardViewController.swift */,
+				E16BB8D120F913B700DBD27D /* DashboardViewController.xib */,
+				E16BB8D720F92EA400DBD27D /* RegisterViewController.swift */,
+				E16BB8D820F92EA400DBD27D /* RegisterViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E16BB8D420F91C5600DBD27D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E16BB8D520F91C7E00DBD27D /* Extensions.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +162,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E16BB8C120F71D9500DBD27D /* LaunchScreen.storyboard in Resources */,
+				E16BB8DA20F92EA400DBD27D /* RegisterViewController.xib in Resources */,
 				E16BB8BE20F71D9500DBD27D /* Assets.xcassets in Resources */,
-				E16BB8BC20F71D9400DBD27D /* Main.storyboard in Resources */,
+				E16BB8CF20F71EA400DBD27D /* LoginViewController.xib in Resources */,
+				E16BB8D320F913B700DBD27D /* DashboardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +176,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E16BB8B920F71D9400DBD27D /* ViewController.swift in Sources */,
+				E16BB8CE20F71EA400DBD27D /* LoginViewController.swift in Sources */,
+				E16BB8D920F92EA400DBD27D /* RegisterViewController.swift in Sources */,
+				E16BB8D220F913B700DBD27D /* DashboardViewController.swift in Sources */,
 				E16BB8B720F71D9400DBD27D /* AppDelegate.swift in Sources */,
+				E16BB8D620F91C7E00DBD27D /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E16BB8BA20F71D9400DBD27D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E16BB8BB20F71D9400DBD27D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E16BB8BF20F71D9500DBD27D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
