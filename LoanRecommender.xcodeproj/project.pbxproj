@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E11B15062106FADB008EA9DD /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = E11B15052106FADA008EA9DD /* GoogleService-Info-2.plist */; };
 		E16BB8B720F71D9400DBD27D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BB8B620F71D9400DBD27D /* AppDelegate.swift */; };
 		E16BB8BE20F71D9500DBD27D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E16BB8BD20F71D9500DBD27D /* Assets.xcassets */; };
 		E16BB8C120F71D9500DBD27D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16BB8BF20F71D9500DBD27D /* LaunchScreen.storyboard */; };
@@ -17,9 +18,14 @@
 		E16BB8D620F91C7E00DBD27D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BB8D520F91C7E00DBD27D /* Extensions.swift */; };
 		E16BB8D920F92EA400DBD27D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16BB8D720F92EA400DBD27D /* RegisterViewController.swift */; };
 		E16BB8DA20F92EA400DBD27D /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E16BB8D820F92EA400DBD27D /* RegisterViewController.xib */; };
+		FC782CC663C03C221071F13B /* Pods_LoanRecommender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800E6D29B1FAE1AC374A6D9C /* Pods_LoanRecommender.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41E7A00BD9A524EA56AAD76A /* Pods-LoanRecommender.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoanRecommender.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoanRecommender/Pods-LoanRecommender.release.xcconfig"; sourceTree = "<group>"; };
+		4DD88531ED612F77BC0C126F /* Pods-LoanRecommender.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoanRecommender.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoanRecommender/Pods-LoanRecommender.debug.xcconfig"; sourceTree = "<group>"; };
+		800E6D29B1FAE1AC374A6D9C /* Pods_LoanRecommender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoanRecommender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11B15052106FADA008EA9DD /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		E16BB8B320F71D9400DBD27D /* LoanRecommender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoanRecommender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16BB8B620F71D9400DBD27D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E16BB8BD20F71D9500DBD27D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC782CC663C03C221071F13B /* Pods_LoanRecommender.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E0CF9DEF65064655C542B58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DD88531ED612F77BC0C126F /* Pods-LoanRecommender.debug.xcconfig */,
+				41E7A00BD9A524EA56AAD76A /* Pods-LoanRecommender.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		865DE926D6431D010AAE9B5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				800E6D29B1FAE1AC374A6D9C /* Pods_LoanRecommender.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E16BB8AA20F71D9400DBD27D = {
 			isa = PBXGroup;
 			children = (
 				E16BB8B520F71D9400DBD27D /* LoanRecommender */,
 				E16BB8B420F71D9400DBD27D /* Products */,
+				4E0CF9DEF65064655C542B58 /* Pods */,
+				865DE926D6431D010AAE9B5A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +104,7 @@
 				E16BB8BD20F71D9500DBD27D /* Assets.xcassets */,
 				E16BB8BF20F71D9500DBD27D /* LaunchScreen.storyboard */,
 				E16BB8C220F71D9500DBD27D /* Info.plist */,
+				E11B15052106FADA008EA9DD /* GoogleService-Info-2.plist */,
 			);
 			name = SupportingFiles;
 			sourceTree = "<group>";
@@ -110,9 +137,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E16BB8C520F71D9500DBD27D /* Build configuration list for PBXNativeTarget "LoanRecommender" */;
 			buildPhases = (
+				BA20F7C3464D2FA5648DF960 /* [CP] Check Pods Manifest.lock */,
 				E16BB8AF20F71D9400DBD27D /* Sources */,
 				E16BB8B020F71D9400DBD27D /* Frameworks */,
 				E16BB8B120F71D9400DBD27D /* Resources */,
+				249B3FA661187DF54CF7669A /* [CP] Embed Pods Frameworks */,
+				65A179EB2DAF3245321E9D61 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,6 +193,7 @@
 			files = (
 				E16BB8C120F71D9500DBD27D /* LaunchScreen.storyboard in Resources */,
 				E16BB8DA20F92EA400DBD27D /* RegisterViewController.xib in Resources */,
+				E11B15062106FADB008EA9DD /* GoogleService-Info-2.plist in Resources */,
 				E16BB8BE20F71D9500DBD27D /* Assets.xcassets in Resources */,
 				E16BB8CF20F71EA400DBD27D /* LoginViewController.xib in Resources */,
 				E16BB8D320F913B700DBD27D /* DashboardViewController.xib in Resources */,
@@ -170,6 +201,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		249B3FA661187DF54CF7669A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LoanRecommender/Pods-LoanRecommender-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoanRecommender/Pods-LoanRecommender-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65A179EB2DAF3245321E9D61 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoanRecommender/Pods-LoanRecommender-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA20F7C3464D2FA5648DF960 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoanRecommender-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E16BB8AF20F71D9400DBD27D /* Sources */ = {
@@ -314,6 +401,7 @@
 		};
 		E16BB8C620F71D9500DBD27D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DD88531ED612F77BC0C126F /* Pods-LoanRecommender.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -323,7 +411,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ABDigitalTeam.LoanRecommender.LoanRecommender;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ABDigitalTeam.LoanRecommender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -332,6 +420,7 @@
 		};
 		E16BB8C720F71D9500DBD27D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41E7A00BD9A524EA56AAD76A /* Pods-LoanRecommender.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -341,7 +430,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ABDigitalTeam.LoanRecommender.LoanRecommender;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ABDigitalTeam.LoanRecommender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

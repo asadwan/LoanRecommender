@@ -1,0 +1,6 @@
+framework module Pods_LoanRecommender {
+  umbrella header "Pods-LoanRecommender-umbrella.h"
+
+  export *
+  module * { export * }
+}
